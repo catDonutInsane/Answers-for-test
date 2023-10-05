@@ -1,0 +1,81 @@
+.dialog-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.dialog {
+
+    background-color: #fff;
+    max-height: 500px;
+    max-width: 350px;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 110px;
+        
+    }
+
+    &__header-title-container {
+        width: 70%;
+        height: 100%;
+        background-color: #a8a2a2;
+    }
+
+    &__header-title {
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__header-button {
+        height: 100%;
+        width: 200px;
+    }
+
+    &__content {
+        display: flex;
+        overflow: scroll;
+        height: 300px;
+    }
+
+    &__content-block {
+        
+        &_left {
+            position: sticky;
+            top: 0;
+            width: 30%;
+            border-right: 1px solid #ccc;
+            
+        }
+
+        &_right {
+            height: 500px;
+            width: 70%;
+        }
+    }
+
+    &__footer {
+        background-color: #ddd;
+        word-wrap:break-word;
+        text-align: center;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+   
+}
